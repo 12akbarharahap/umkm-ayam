@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&family=Playfair+Display:wght@700;800;900&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  /* KMS 3-Color Strict Palette */
+  --warna-coklat: #4A2B1D; /* Primary Dark Brown (Logo Text/Roof) */
+  --warna-krem: #E6CDB3;   /* Secondary Beige (Logo Background) */
+  --warna-emas: #D48D31;   /* Accent Gold (Logo Rooster Tail) */
+  
+  --warna-putih: #ffffff;
+  
+  /* Semantic Mappings */
+  --warna-teks-utama: var(--warna-coklat);
+  --warna-teks-sekunder: #7A5741;
+}
+
+@theme {
+  --color-primary-base: var(--warna-coklat);
+  --color-surface: var(--warna-putih);
+  --color-surface-alt: var(--warna-krem);
+  --color-surface-dim: #FDF9F5; /* Very light warm tint for alternating backgrounds */
+  
+  /* Merge all accents to Emas */
+  --color-accent-main: var(--warna-emas);
+  --color-accent-ayam: var(--warna-emas); /* Kept for backwards compatibility temporarily */
+  --color-accent-telur: var(--warna-emas); /* Kept for backwards compatibility temporarily */
+  
+  --color-tint-ayam: #FFF7ED; /* Light gold tint */
+  --color-tint-telur: #FFF7ED; /* Light gold tint */
+  
+  --color-text-main: var(--warna-teks-utama);
+  --color-text-secondary: var(--warna-teks-sekunder);
+  --color-text-dim: #B39B8D;
+  --color-text-dark: var(--warna-putih);
+  --color-text-dark-dim: rgba(255, 255, 255, 0.7);
+  
+  --color-border: #E6CDB3;
+  --color-border-dark: rgba(255, 255, 255, 0.15);
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-hero: 'Plus Jakarta Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+  color: var(--warna-teks-utama);
+  background-color: var(--warna-permukaan);
+}
+
+body {
+  margin: 0;
+}
